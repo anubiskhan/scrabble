@@ -33,12 +33,12 @@ class ScrabbleTest < Minitest::Test
     assert_equal 0, game.score_with_multipliers(nil)
   end
 
-  def test_highest_scoring_word
-    game = Scrabble.new
-    assert_equal 'home', game.highest_scoring_word(['home', 'word', 'hello', 'sound'])
-    skip
-    assert_equal 'word', game.highest_scoring_word(['hello', 'word', 'sound'])
-    assert_equal 'silence', game.highest_scoring_word(['home', 'word', 'silence'])
-    assert_equal 'word', game.highest_scoring_word(['hi', 'word', 'ward'])
-  end
+  # def test_highest_scoring_word
+  #   game = Scrabble.new
+  #   assert_equal 'home', game.highest_scoring_word(['home', 'word', 'hello', 'sound'])
+  #   skip
+  #   assert_equal 'word', game.highest_scoring_word(['hello', 'word', 'sound'])
+  #   assert_equal 'silence', game.highest_scoring_word(['home', 'word', 'silence'])
+  #   assert_equal 'word', game.highest_scoring_word(['hi', 'word', 'ward'])
+  # end
 end
